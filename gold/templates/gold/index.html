@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Worth your weight in gold</title>
+        <meta charset="utf-8">
+        {% load static %}
+        <link href="{% static 'gold/style.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <div class="yellow shadowed stuff-box" id="main">
+        <h2>Worth your weight in gold</h2>
+        <p> Input your weight and press the = button to see what you're worth</p>
+        <p> For your privacy, results are removed when clicked</p>   
+        <form> 
+        	<input type="numeric" id="num"> 
+        	<select name="unit" id="unit">
+        		<option value="pounds">pounds</option>
+        		<option value="kilograms">kilograms</option>
+				<option value="dry ounces">dry ounces</option>
+        		<option value="grams">grams</option>
+				<option value="tons">tons</option>
+        		<option value="troy ounces">troy ounces</option>
+        	</select>
+        	<button type="button" id="button"> = </button>
+        </form>  
+        <p id="gold"> please wait </p>   
+        </div>
+        <script src="{% static 'gold/script.js' %}"> </script>
+    </body>
+</html>
